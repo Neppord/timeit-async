@@ -1,0 +1,29 @@
+{
+  "name": "timeit-async",
+  "version": "0.0.0",
+  "description": "helps you time your async functions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Neppord/timeit-async.git"
+  },
+  "keywords": [
+    "timeit",
+    "timeit-async",
+    "profile",
+    "speed",
+    "time"
+  ],
+  "author": "Samuel Ytterbrink",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neppord/timeit-async/issues"
+  },
+  "homepage": "https://github.com/Neppord/timeit-async",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "microwatch": "~0.1.2"
+  }
+}
