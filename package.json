@@ -22,8 +22,5 @@
   "homepage": "https://github.com/Neppord/timeit-async",
   "directories": {
     "test": "test"
-  },
-  "dependencies": {
-    "microwatch": "~0.1.2"
   }
 }

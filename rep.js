@@ -1,8 +1,8 @@
-module.exports = function (watch, func, callback) {
-  setImmediate(function(){
-    watch.start();
+module.exports = function (func, callback) {
+  setImmediate(function () {
+    var start = process.hrtime()
     func(function () {
-      callback(watch.now());
-    });
-  });
+      callback(process.hrtime(start))
+    })
+  })
 }
