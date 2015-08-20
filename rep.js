@@ -2,7 +2,8 @@ module.exports = function (func, callback) {
   setImmediate(function () {
     var start = process.hrtime()
     func(function () {
-      callback(process.hrtime(start))
+      var diff = process.hrtime(start)
+      callback(diff[0] * 1e9 + diff[1])
     })
   })
 }

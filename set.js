@@ -8,7 +8,7 @@ module.exports = function set (func, reps, callback) {
   } else {
     rep(func, function (time) {
       set(func, reps - 1, function (to_add) {
-        callback([time[0] + to_add[0], time[1] + to_add[1]])
+        callback(time + to_add)
       })
     })
   }
